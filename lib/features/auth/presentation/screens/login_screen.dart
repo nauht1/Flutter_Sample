@@ -4,6 +4,7 @@ import 'package:flutter_app_sample/features/auth/presentation/components/my_text
 import 'package:flutter_app_sample/features/auth/presentation/provider/auth_provider.dart';
 import 'package:flutter_app_sample/features/auth/presentation/provider/user_provider.dart';
 import 'package:flutter_app_sample/features/auth/presentation/screens/privacy_screen.dart';
+import 'package:flutter_app_sample/features/auth/presentation/screens/register_screen.dart';
 import 'package:flutter_app_sample/features/main/presentation/main_screen.dart';
 import 'package:flutter_app_sample/services/auth_service.dart';
 import 'package:flutter_app_sample/services/toast_service.dart';
@@ -170,6 +171,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           GestureDetector(
                             onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (_) => const RegisterScreen()),
+                              );
                             },
                             child: Text(
                               " Register",

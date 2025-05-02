@@ -14,7 +14,7 @@ class PrivacyScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Wanna create an account ? Please download Casitfy :D ")
+                Text("This is privacy page ")
               ],
             )
           )
